@@ -1,7 +1,13 @@
 About libtiledb-sql
 ===================
 
-Home: https://mariadb.org
+Home: https://tiledb.com
+
+Docs: https://docs.tiledb.com/developer/api-usage/embedded-sql
+
+Source: https://github.com/TileDB-Inc/TileDB-MariaDB
+
+Upstream: https://mariadb.org
 
 Package license: GPLv2
 
