@@ -11,6 +11,8 @@ Summary: libtiledb-sql is a SQL interface for TileDB arrays using the MyTile sto
 
 MyTile is a storage engine for MariaDB which allows dynamic access to TileDB array. libtiledb-sql is a limited build of mariadb to produce a minimum embeddable library for a SQL interface.\n
 
+Docs: https://docs.tiledb.com/developer/api-usage/embedded-sql
+
 Source: https://github.com/TileDB-Inc/TileDB-MariaDB
 
 Upstream source: https://mariadb.org
