@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '9'
 krb5:
-- '1.16'
+- 1.17.1
 libiconv:
 - '1.15'
 lz4_c:
@@ -25,7 +25,7 @@ macos_min_version:
 ncurses:
 - '6.1'
 openssl:
-- 1.1.1a
+- 1.1.1
 pin_run_as_build:
   bzip2:
     max_pin: x
