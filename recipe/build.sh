@@ -2,12 +2,12 @@
 set -exo pipefail
 
 original_dir=$PWD
-export MARIADB_VERSION="mariadb-10.4.8"
+export MARIADB_VERSION="mariadb-10.4.13"
 mkdir tmp
 shopt -s extglob
 mv !(tmp) tmp # Move everything but tmp
 # Use git to clone latest 10.4 to work around MDEV-20767 until 10.4.9 is release
-git clone https://github.com/MariaDB/server.git -b 10.4 ${MARIADB_VERSION}
+git clone https://github.com/MariaDB/server.git -b ${MARIADB_VERSION} ${MARIADB_VERSION}
 
 if [[ $target_platform =~ osx.* ]]; then
   export CFLAGS="${CFLAGS} -ULIBICONV_PLUG"
