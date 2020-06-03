@@ -13,7 +13,7 @@ cxx_compiler_version:
 docker_image:
 - condaforge/linux-anvil-comp7
 krb5:
-- '1.16'
+- 1.17.1
 lz4_c:
 - 1.9.2
 ncurses:
