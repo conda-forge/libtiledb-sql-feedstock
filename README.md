@@ -5,7 +5,7 @@ Home: https://tiledb.com
 
 Package license: GPLv2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: libtiledb-sql is a SQL interface for TileDB arrays using the MyTile storage engine
 
