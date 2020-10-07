@@ -5,9 +5,13 @@ Home: https://tiledb.com
 
 Package license: GPLv2
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libtiledb-sql-feedstock/blob/master/LICENSE.txt)
 
 Summary: libtiledb-sql is a SQL interface for TileDB arrays using the MyTile storage engine
+
+Development: https://github.com/TileDB-Inc/TileDB-MariaDB
+
+Documentation: https://docs.tiledb.com/developer/api-usage/embedded-sql
 
 MyTile is a storage engine for MariaDB which allows dynamic access to TileDB array. libtiledb-sql is a limited build of mariadb to produce a minimum embeddable library for a SQL interface.\n
 

@@ -15,13 +15,11 @@ cxx_compiler_version:
 krb5:
 - 1.17.1
 libiconv:
-- '1.15'
+- '1.16'
 lz4_c:
 - 1.9.2
 macos_machine:
 - x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
 ncurses:
 - '6.2'
 openssl:
