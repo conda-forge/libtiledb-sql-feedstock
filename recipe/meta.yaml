@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.5.9" %}
-{% set sha256 = "3d8b79d9d99b1b3f9a36fca27acfae3054fcef77cb5562aafe7fdc1431944c02" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "2037b48411c6cb3d173f6fefe61be965a55a1534afc5715f9b73e0ac588bd5f8" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   missing_dso_whitelist:
     - /usr/lib/libncurses.5.4.dylib  # [osx]
@@ -29,7 +29,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.0.*
+    - tiledb 2.1.*
     - curl
     - bison
     - zlib
@@ -44,7 +44,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.0.*
+    - tiledb 2.1.*
     - curl
     - bison
     - zlib
@@ -88,5 +88,5 @@ about:
 extra:
   recipe-maintainers:
     - shelnutt2
-    - tdenniston
+    - ericawithlove208
     - ihnorton
