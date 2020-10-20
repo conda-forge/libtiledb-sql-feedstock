@@ -3,7 +3,7 @@ About libtiledb-sql
 
 Home: https://tiledb.com
 
-Package license: GPL-2.0
+Package license: GPLv2
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libtiledb-sql-feedstock/blob/master/LICENSE.txt)
 
@@ -153,7 +153,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ericawithlove208](https://github.com/ericawithlove208/)
 * [@ihnorton](https://github.com/ihnorton/)
 * [@shelnutt2](https://github.com/shelnutt2/)
-* [@tdenniston](https://github.com/tdenniston/)
 
