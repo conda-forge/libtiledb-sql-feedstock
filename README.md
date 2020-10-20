@@ -3,7 +3,7 @@ About libtiledb-sql
 
 Home: https://tiledb.com
 
-Package license: GPLv2
+Package license: GPL-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libtiledb-sql-feedstock/blob/master/LICENSE.txt)
 
