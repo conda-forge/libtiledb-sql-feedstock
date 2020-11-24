@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "6b52b2647c3dc5a2d3867f3d57ffda074c57b9143ded95a94d39dcd0585ab02e" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "bae9514d448ec7d75d6ecdee9152f7049770c59467e1669521a3d40c753427d5" %}
 
 package:
   name: {{ name }}
@@ -58,8 +58,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
     - test -e $PREFIX/lib/libmariadb$SHLIB_EXT  # [linux]
     - test -e $PREFIX/lib/libmariadbd$SHLIB_EXT  # [linux]
