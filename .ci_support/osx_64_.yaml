@@ -11,7 +11,7 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '10'
+- '11'
 krb5:
 - 1.17.1
 libiconv:
