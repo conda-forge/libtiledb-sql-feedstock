@@ -17,7 +17,7 @@ docker_image:
 krb5:
 - 1.17.1
 lz4_c:
-- 1.9.2
+- 1.9.3
 ncurses:
 - '6.2'
 openssl:
