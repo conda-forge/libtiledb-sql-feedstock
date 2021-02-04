@@ -23,6 +23,8 @@ mkdir builddir
 cd builddir
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DCMAKE_PREFIX_PATH=$PREFIX \
+         -DPLUGIN_INNODB=NO \
+         -DPLUGIN_INNOBASE=NO \
          -DPLUGIN_TOKUDB=NO \
          -DPLUGIN_ROCKSDB=NO \
          -DPLUGIN_MROONGA=NO \
@@ -39,6 +41,10 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DCMAKE_BUILD_TYPE=Release \
          -SWITH_DEBUG=0 \
          -DWITH_EMBEDDED_SERVER=ON \
+         -DWITH_UNIT_TESTS=OFF \
+         -DINSTALL_MYSQLTESTDIR= \
+         -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+         -DWITH_WSREP=OFF \
          ..
 make -j ${CPU_COUNT}
 make install
