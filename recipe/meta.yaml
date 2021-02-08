@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   missing_dso_whitelist:
     - /usr/lib/libncurses.5.4.dylib  # [osx]
@@ -67,7 +67,7 @@ test:
 
 about:
   home: https://tiledb.com
-  license: GPLv2
+  license: GPL-2.0-only
   license_family: GPL
   license_file: COPYING
   summary: libtiledb-sql is a SQL interface for TileDB arrays using the MyTile storage engine
