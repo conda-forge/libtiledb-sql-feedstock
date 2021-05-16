@@ -15,7 +15,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 krb5:
-- 1.17.1
+- '1.19'
 lz4_c:
 - 1.9.3
 ncurses:
