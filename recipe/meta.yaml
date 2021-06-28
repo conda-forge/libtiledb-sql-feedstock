@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.9.2" %}
-{% set sha256 = "f4e50945643d7188b88bbb1c62c9bf9d43608d6bd5404a3af48f806947951bb0" %}
+{% set version = "0.9.3" %}
+{% set sha256 = "b862d7bcff92a3fa83a8ab6050d3398e91565e3890c4f0b868ee14a1c7bff99b" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   missing_dso_whitelist:
     - /usr/lib/libncurses.5.4.dylib  # [osx]
