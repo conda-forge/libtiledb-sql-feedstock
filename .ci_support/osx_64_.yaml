@@ -12,8 +12,6 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '11'
-krb5:
-- '1.19'
 libiconv:
 - '1.16'
 lz4_c:
@@ -29,8 +27,6 @@ pin_run_as_build:
     max_pin: x
   curl:
     max_pin: x
-  krb5:
-    max_pin: x.x
   libiconv:
     max_pin: x.x
   lz4-c:
