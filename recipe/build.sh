@@ -2,12 +2,14 @@
 set -exo pipefail
 
 original_dir=$PWD
-export MARIADB_VERSION="mariadb-10.4.20"
+export MARIADB_VERSION="mariadb-10.5.12"
 mkdir tmp
 shopt -s extglob
 mv !(tmp) tmp # Move everything but tmp
 git clone https://github.com/MariaDB/server.git -b ${MARIADB_VERSION} ${MARIADB_VERSION}
 
+CFLAGS="${CFLAGS} -Wno-error=deprecated-declarations"
+CXXFLAGS="${CXXFLAGS} -Wno-error=deprecated-declarations"
 if [[ $target_platform =~ osx.* ]]; then
   export CFLAGS="${CFLAGS} -ULIBICONV_PLUG"
   export CXXFLAGS="${CXXFLAGS} -ULIBICONV_PLUG"
