@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.9.6" %}
-{% set sha256 = "24908329d27b095e4dbc1d440b911d4237acb4f815c1cd0e8a7a094e263bc5f4" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "fd81f47035be6fb2d759d23d3a4fd7d66f6403485d4728270aea0dae2f7dfbac" %}
 
 package:
   name: {{ name }}
@@ -30,7 +30,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.3.*
+    - tiledb 2.4.*
     - curl
     - bison
     - zlib
@@ -41,11 +41,12 @@ requirements:
     - ncurses
     - xz
     - krb5 1.17.*
+    - pcre2
   run:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.3.*
+    - tiledb 2.4.*
     - curl
     - bison
     - zlib
@@ -56,6 +57,7 @@ requirements:
     - ncurses
     - xz
     - krb5 1.17.*
+    - pcre2
 
 test:
   commands:
