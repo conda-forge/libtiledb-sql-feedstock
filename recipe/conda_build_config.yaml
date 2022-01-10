@@ -1,0 +1,6 @@
+channel_sources:
+  - conda-forge/label/tiledb_rc,conda-forge,defaults
+channel_targets:
+  - conda-forge tiledb_rc
+tiledb:
+  - '2.6.0rc1'
