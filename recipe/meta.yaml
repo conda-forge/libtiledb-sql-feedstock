@@ -4,7 +4,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: 0.12.0rc0 # {{ version }}
 
 source:
   fn: TileDB-MariaDB-{{ version }}.tar.gz
