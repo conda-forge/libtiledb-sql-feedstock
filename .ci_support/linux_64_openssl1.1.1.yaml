@@ -3,9 +3,9 @@ bzip2:
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge
+- conda-forge/label/tiledb_rc,conda-forge,defaults
 channel_targets:
-- conda-forge main
+- conda-forge tiledb_rc
 curl:
 - '7'
 cxx_compiler:
