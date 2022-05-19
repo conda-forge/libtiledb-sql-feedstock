@@ -37,8 +37,6 @@ pin_run_as_build:
     max_pin: x.x
   libiconv:
     max_pin: x.x
-  lz4-c:
-    max_pin: x.x.x
   xz:
     max_pin: x.x
   zlib:
