@@ -31,8 +31,6 @@ pin_run_as_build:
     max_pin: x
   krb5:
     max_pin: x.x
-  lz4-c:
-    max_pin: x.x.x
   xz:
     max_pin: x.x
   zlib:
