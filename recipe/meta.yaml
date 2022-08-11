@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   missing_dso_whitelist:
     - /usr/lib/libncurses.5.4.dylib  # [osx]
@@ -30,7 +30,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.10.*
+    - tiledb 2.11.*
     - curl
     - bison
     - zlib
@@ -46,7 +46,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.10.*
+    - tiledb 2.11.*
     - curl
     - bison
     - zlib
