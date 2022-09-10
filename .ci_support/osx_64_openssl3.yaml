@@ -17,7 +17,7 @@ cxx_compiler_version:
 krb5:
 - '1.19'
 libiconv:
-- '1.16'
+- '1.17'
 lz4_c:
 - 1.9.3
 macos_machine:
