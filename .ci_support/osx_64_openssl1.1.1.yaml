@@ -17,7 +17,7 @@ cxx_compiler_version:
 krb5:
 - '1.19'
 libiconv:
-- '1.16'
+- '1'
 lz4_c:
 - 1.9.3
 macos_machine:
@@ -28,23 +28,10 @@ openssl:
 - 1.1.1
 pcre2:
 - '10.37'
-pin_run_as_build:
-  bzip2:
-    max_pin: x
-  curl:
-    max_pin: x
-  krb5:
-    max_pin: x.x
-  libiconv:
-    max_pin: x.x
-  xz:
-    max_pin: x.x
-  zlib:
-    max_pin: x.x
 target_platform:
 - osx-64
 xz:
-- '5.2'
+- '5'
 zlib:
 - '1.2'
 zstd:
