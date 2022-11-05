@@ -23,7 +23,7 @@ ncurses:
 openssl:
 - '3'
 pcre2:
-- '10.37'
+- '10.40'
 target_platform:
 - linux-64
 xz:
