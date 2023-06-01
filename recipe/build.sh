@@ -14,6 +14,7 @@ if [[ $target_platform =~ osx.* ]]; then
   export CFLAGS="${CFLAGS} -ULIBICONV_PLUG"
   export CXXFLAGS="${CXXFLAGS} -ULIBICONV_PLUG"
 fi
+export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
 #tar xf ${MARIADB_VERSION}.tar.gz \
 # Copy LICENSE File
@@ -45,6 +46,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_UNIT_TESTS=OFF \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
+  	 -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
          ..
 make -j ${CPU_COUNT}
 make install
