@@ -21,7 +21,7 @@ if [[ $CONDA_BUILD_CROSS_COMPILATION -eq 1 ]]; then
   export EXTRA_XC_ARGS="-DSTACK_DIRECTION=1"
 
   if [[ $target_platform =~ osx.* ]]; then
-    EXTRA_XC_ARGS="${EXTRA_XC_ARGS} -DHAVE_IB_GCC_ATOMIC_BUILTINS=1")
+    EXTRA_XC_ARGS="${EXTRA_XC_ARGS} -DHAVE_IB_GCC_ATOMIC_BUILTINS=1"
   fi
 fi
 
