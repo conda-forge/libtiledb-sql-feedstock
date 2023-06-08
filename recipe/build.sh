@@ -48,6 +48,6 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_WSREP=OFF \
   	 -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
          ..
-make -j ${CPU_COUNT}
+make -j ${CPU_COUNT} || true # TODO REMOVE ME - debuggin
 make -j1 # TODO REMOVE ME - debuggin
 make install
