@@ -59,7 +59,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_UNIT_TESTS=OFF \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
-         ${EXTRA_XC_ARGS}
+         ${EXTRA_XC_ARGS} \
          ..
 make -j ${CPU_COUNT} || true # TODO REMOVE ME - debuggin
 make -j1 # TODO REMOVE ME - debuggin
