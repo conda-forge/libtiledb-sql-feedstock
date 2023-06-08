@@ -20,7 +20,7 @@ if [[ $CONDA_BUILD_CROSS_COMPILATION -eq 1 ]]; then
   # cross-compiling on macOS
   export EXTRA_XC_ARGS="-DSTACK_DIRECTION=1"
 
-  if [[ $target_platform =~ osx.* ]]; then
+  if ! [[ $target_platform =~ osx.* ]]; then
     EXTRA_XC_ARGS="${EXTRA_XC_ARGS} -DHAVE_IB_GCC_ATOMIC_BUILTINS=1"
   fi
 fi
@@ -59,6 +59,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_UNIT_TESTS=OFF \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
+         ${EXTRA_XC_ARGS}
          ..
 make -j ${CPU_COUNT} || true # TODO REMOVE ME - debuggin
 make -j1 # TODO REMOVE ME - debuggin
