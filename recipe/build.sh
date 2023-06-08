@@ -16,7 +16,17 @@ if [[ $target_platform =~ osx.* ]]; then
 fi
 export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
+if [[ $CONDA_BUILD_CROSS_COMPILATION -eq 1 ]]; then
+  # cross-compiling on macOS
+  export EXTRA_XC_ARGS="-DSTACK_DIRECTION=1"
+
+  if [[ $target_platform =~ osx.* ]]; then
+    EXTRA_XC_ARGS="${EXTRA_XC_ARGS} -DHAVE_IB_GCC_ATOMIC_BUILTINS=1")
+  fi
+fi
+
 echo "CMAKE_ARGS is: " "'${CMAKE_ARGS}'"
+echo "EXTRA_XC_ARGS is: " "'${EXTRA_XC_ARGS}'"
 
 #tar xf ${MARIADB_VERSION}.tar.gz \
 # Copy LICENSE File
