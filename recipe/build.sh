@@ -24,6 +24,7 @@ cd ${MARIADB_VERSION}
 mkdir builddir
 cd builddir
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
+         ${CMAKE_ARGS} \
          -DCMAKE_PREFIX_PATH=$PREFIX \
          -DPLUGIN_INNODB=NO \
          -DPLUGIN_INNOBASE=NO \
