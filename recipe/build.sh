@@ -16,6 +16,8 @@ if [[ $target_platform =~ osx.* ]]; then
 fi
 export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
+echo "CMAKE_ARGS is: " "'${CMAKE_ARGS}'"
+
 #tar xf ${MARIADB_VERSION}.tar.gz \
 # Copy LICENSE File
 cp ${MARIADB_VERSION}/COPYING .
