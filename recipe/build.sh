@@ -2,7 +2,7 @@
 set -exo pipefail
 
 original_dir=$PWD
-export MARIADB_VERSION="mariadb-10.5.13"
+export MARIADB_VERSION="mariadb-10.5.21"
 mkdir tmp
 shopt -s extglob
 mv !(tmp) tmp # Move everything but tmp
