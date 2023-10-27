@@ -17,6 +17,12 @@ jobs:
       osx_64_krb51.21libcurl8openssl3:
         CONFIG: osx_64_krb51.21libcurl8openssl3
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_curl7openssl1.1.1:
+        CONFIG: osx_arm64_curl7openssl1.1.1
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_curl8openssl3:
+        CONFIG: osx_arm64_curl8openssl3
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
   steps:
