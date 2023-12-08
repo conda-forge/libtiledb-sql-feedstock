@@ -6,8 +6,6 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '8'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -16,12 +14,14 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 krb5:
 - '1.20'
+libcurl:
+- '7'
 lz4_c:
 - 1.9.3
 ncurses:
 - '6'
 openssl:
-- '3'
+- 1.1.1
 pcre2:
 - '10.42'
 target_platform:
@@ -30,7 +30,7 @@ xz:
 - '5'
 zip_keys:
 - - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:

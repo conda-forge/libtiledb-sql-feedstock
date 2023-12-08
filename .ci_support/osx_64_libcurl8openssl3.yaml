@@ -8,14 +8,14 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-curl:
-- '8'
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '16'
 krb5:
 - '1.20'
+libcurl:
+- '8'
 libiconv:
 - '1'
 lz4_c:
@@ -34,7 +34,7 @@ xz:
 - '5'
 zip_keys:
 - - openssl
-  - curl
+  - libcurl
 zlib:
 - '1.2'
 zstd:
