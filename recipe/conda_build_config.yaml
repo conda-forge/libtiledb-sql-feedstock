@@ -4,12 +4,12 @@ MACOSX_DEPLOYMENT_TARGET:  # [osx and x86_64]
   - "10.14"                # [osx and x86_64]
 openssl:
   - '1.1.1'
-  - '1.1.1'
   - '3'
-curl:
+  - '3'
+libcurl:
   - 7
   - 7
   - 8
 zip_keys:
   - 'openssl'
-  - 'curl'
+  - 'libcurl'
