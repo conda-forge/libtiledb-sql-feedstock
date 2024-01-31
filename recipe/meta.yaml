@@ -31,7 +31,7 @@ requirements:
     - libaio  # [linux]
     - libiconv  # [osx]
     - tiledb 2.19.*
-    - curl
+    - libcurl
     - bison
     - zlib
     - bzip2
@@ -47,7 +47,7 @@ requirements:
     - libaio  # [linux]
     - libiconv  # [osx]
     - tiledb 2.19.*
-    - curl
+    - libcurl
     - bison
     - zlib
     - bzip2
