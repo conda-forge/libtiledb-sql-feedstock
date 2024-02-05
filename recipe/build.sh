@@ -24,11 +24,11 @@ mv tmp ${MARIADB_VERSION}/storage/mytile
 cd ${MARIADB_VERSION}
 
 ## cross-compiling for arm. Will be moved in IF
-mkdir host
-cd host
-cmake ..
-make import_executables
-cd ..
+#mkdir host
+#cd host
+#cmake ..
+#make import_executables
+#cd ..
 
 if [[ $target_platform == osx-arm64  ]]; then
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
@@ -60,9 +60,9 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
          -DSTACK_DIRECTION=1 \
-         -DIMPORT_EXECUTABLES=../host/import_executables.cmake \
          -DHAVE_IB_GCC_ATOMIC_BUILTINS=1 \
          -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
+          ${CMAKE_SYSTEM_NAME_SETTING} \
          ..
 make -j ${CPU_COUNT}
 make install
