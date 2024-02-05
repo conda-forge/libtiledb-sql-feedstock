@@ -21,12 +21,6 @@ if [[ $target_platform == osx-arm64  ]]; then
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
 
-echo "================================";
-ls -l $PREFIX/bin/;
-echo "++++++++";
-ls -l $PREFIX/bin/bison;
-$PREFIX/bin/bison --version;
-
 #tar xf ${MARIADB_VERSION}.tar.gz \
 # Copy LICENSE File
 cp ${MARIADB_VERSION}/COPYING .

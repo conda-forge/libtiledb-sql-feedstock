@@ -26,14 +26,13 @@ requirements:
     - git
     - libiconv  # [osx]
     - {{ compiler('cxx') }}
-    - conda-forge::bison
+    - bison
   host:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
     - tiledb 2.19.*
     - libcurl
-    - conda-forge::bison
     - zlib
     - bzip2
     - zstd
@@ -49,7 +48,6 @@ requirements:
     - libiconv  # [osx]
     - tiledb 2.19.*
     - libcurl
-    - conda-forge::bison
     - zlib
     - bzip2
     - zstd
