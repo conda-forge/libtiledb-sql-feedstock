@@ -1,6 +1,8 @@
 #!/bin/sh
 set -exo pipefail
 
+export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
+
 original_dir=$PWD
 export MARIADB_VERSION="mariadb-11.0.2"
 mkdir tmp
@@ -13,6 +15,10 @@ CXXFLAGS="${CXXFLAGS} -Wno-error=deprecated-declarations"
 if [[ $target_platform =~ osx.* ]]; then
   export CFLAGS="${CFLAGS} -ULIBICONV_PLUG"
   export CXXFLAGS="${CXXFLAGS} -ULIBICONV_PLUG"
+fi
+
+if [[ $target_platform == osx-arm64  ]]; then
+  export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
 
 #tar xf ${MARIADB_VERSION}.tar.gz \
@@ -45,6 +51,8 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_UNIT_TESTS=OFF \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
+         -DSTACK_DIRECTION=1 \
+         -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
          ..
 make -j ${CPU_COUNT}
 make install
