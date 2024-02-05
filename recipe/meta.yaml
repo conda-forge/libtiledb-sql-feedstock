@@ -26,7 +26,6 @@ requirements:
     - git
     - libiconv  # [osx]
     - {{ compiler('cxx') }}
-    - bison
   host:
     - openssl
     - libaio  # [linux]
