@@ -1,8 +1,6 @@
 #!/bin/sh
 set -exo pipefail
 
-export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
-
 original_dir=$PWD
 export MARIADB_VERSION="mariadb-11.0.2"
 mkdir tmp
@@ -23,17 +21,18 @@ cp ${MARIADB_VERSION}/COPYING .
 mv tmp ${MARIADB_VERSION}/storage/mytile
 cd ${MARIADB_VERSION}
 
+# tools
+mkdir host
+cd host
+cmake ..
+make import_executables
+cd ..
+
 if [[ $target_platform == osx-arm64  ]]; then
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
 
-# tools
-mkdir host
-cd host
-cmake ${CMAKE_SYSTEM_NAME_SETTING} -DSTACK_DIRECTION=1 ..
-make import_executables
-cd ..
-
+export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
 mkdir builddir
 cd builddir
