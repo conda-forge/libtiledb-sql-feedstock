@@ -21,20 +21,18 @@ cp ${MARIADB_VERSION}/COPYING .
 mv tmp ${MARIADB_VERSION}/storage/mytile
 cd ${MARIADB_VERSION}
 
-
-export CC=${CC_FOR_BUILD} \
-            CXX=${CXX_FOR_BUILD} \
-            CPP="${CC_FOR_BUILD} -E" \
-            CFLAGS="-O2" \
-	          LDFLAGS=${LDFLAGS//${PREFIX}/${CONDA_PREFIX}} \
-	          PKG_CONFIG_PATH=${BUILD_PREFIX}/lib/pkgconfig \
-            AR="$(${CC_FOR_BUILD} --print-prog-name=ar)" \
-            RANLIB="$(${CC_FOR_BUILD} --print-prog-name=ranlib)" \
-            LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && mkdir host && cd host && cmake .. && make import_executables;
-
-cd ..
-
 if [[ $target_platform == osx-arm64  ]]; then
+
+  export CC=${CC_FOR_BUILD} \
+              CXX=${CXX_FOR_BUILD} \
+              CPP="${CC_FOR_BUILD} -E" \
+              CFLAGS="-O2" \
+  	          LDFLAGS=${LDFLAGS//${PREFIX}/${CONDA_PREFIX}} \
+  	          PKG_CONFIG_PATH=${BUILD_PREFIX}/lib/pkgconfig \
+              AR="$(${CC_FOR_BUILD} --print-prog-name=ar)" \
+              RANLIB="$(${CC_FOR_BUILD} --print-prog-name=ranlib)" \
+              LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && mkdir host && cd host && cmake .. && make import_executables && cd ..
+
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
 
