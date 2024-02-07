@@ -31,7 +31,7 @@ if [[ $target_platform == osx-arm64  ]]; then
   	          PKG_CONFIG_PATH=${BUILD_PREFIX}/lib/pkgconfig \
               AR="$(${CC_FOR_BUILD} --print-prog-name=ar)" \
               RANLIB="$(${CC_FOR_BUILD} --print-prog-name=ranlib)" \
-              LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && mkdir host && cd host && cmake .. && make import_executables && cd ..
+              LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && conda install conda-forge::zlib && mkdir host && cd host && cmake .. && make import_executables && cd ..
 
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
