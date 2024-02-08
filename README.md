@@ -61,27 +61,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_krb51.20libcurl7openssl1.1.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_krb51.20libcurl7openssl1.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_krb51.20libcurl7openssl3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_krb51.20libcurl7openssl3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_krb51.21libcurl8openssl3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_krb51.21libcurl8openssl3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_krb51.20libcurl7openssl1.1.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
@@ -103,17 +82,24 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_curl7openssl1.1.1</td>
+              <td>osx_arm64_krb51.20libcurl7openssl1.1.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_curl7openssl1.1.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_krb51.20libcurl7openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_curl8openssl3</td>
+              <td>osx_arm64_krb51.20libcurl7openssl3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_curl8openssl3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_krb51.20libcurl7openssl3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_krb51.21libcurl8openssl3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8376&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libtiledb-sql-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_krb51.21libcurl8openssl3" alt="variant">
                 </a>
               </td>
             </tr>
