@@ -21,42 +21,22 @@ cp ${MARIADB_VERSION}/COPYING .
 mv tmp ${MARIADB_VERSION}/storage/mytile
 cd ${MARIADB_VERSION}
 
-# Save current values of the variables
-OLD_CC=$CC
-OLD_CXX=$CXX
-OLD_CPP=$CPP
-OLD_CFLAGS=$CFLAGS
-OLD_LDFLAGS=$LDFLAGS
-OLD_PKG_CONFIG_PATH=$PKG_CONFIG_PATH
-OLD_AR=$AR
-OLD_RANLIB=$RANLIB
-OLD_LD=$LD
 
 if [[ $target_platform == osx-arm64  ]]; then
-
-  export CC=${CC_FOR_BUILD} \
-              CXX=${CXX_FOR_BUILD} \
-              CPP="${CC_FOR_BUILD} -E" \
-              CFLAGS="-O2" \
-  	          LDFLAGS=${LDFLAGS//${PREFIX}/${CONDA_PREFIX}} \
-  	          PKG_CONFIG_PATH=${BUILD_PREFIX}/lib/pkgconfig \
-              AR="$(${CC_FOR_BUILD} --print-prog-name=ar)" \
-              RANLIB="$(${CC_FOR_BUILD} --print-prog-name=ranlib)" \
-              LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && mkdir host && cd host && cmake -DCMAKE_PREFIX_PATH=$BUILD_PREFIX .. && make import_executables && cd ..
+  # need to cross compile. See https://mariadb.com/kb/en/cross-compiling-mariadb/
+  # temporarily use the x86 clang to build the tools mariadb needs in the host dir.
+  CC=${CC_FOR_BUILD} \
+  CXX=${CXX_FOR_BUILD} \
+  CPP="${CC_FOR_BUILD} -E" \
+  CFLAGS="-O2" \
+  LDFLAGS=${LDFLAGS//${PREFIX}/${CONDA_PREFIX}} \
+  PKG_CONFIG_PATH=${BUILD_PREFIX}/lib/pkgconfig \
+  AR="$(${CC_FOR_BUILD} --print-prog-name=ar)" \
+  RANLIB="$(${CC_FOR_BUILD} --print-prog-name=ranlib)" \
+  LD="$(${CC_FOR_BUILD} --print-prog-name=ld)" && mkdir host && cd host && cmake -DCMAKE_PREFIX_PATH=$BUILD_PREFIX .. && make import_executables && cd ..
 
   export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
 fi
-
-# Restore previous values of the variables
-CC=$OLD_CC
-CXX=$OLD_CXX
-CPP=$OLD_CPP
-CFLAGS=$OLD_CFLAGS
-LDFLAGS=$OLD_LDFLAGS
-PKG_CONFIG_PATH=$OLD_PKG_CONFIG_PATH
-AR=$OLD_AR
-RANLIB=$OLD_RANLIB
-LD=$OLD_LD
 
 export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
 
