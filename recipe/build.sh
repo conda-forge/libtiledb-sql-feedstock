@@ -33,8 +33,8 @@ OLD_RANLIB=$RANLIB
 OLD_LD=$LD
 
 if [[ $target_platform == osx-arm64  ]]; then
-  # need to cross compile. See https://mariadb.com/kb/en/cross-compiling-mariadb/
-  # temporarily use the x86 clang to build the tools mariadb needs in the host dir.
+  # Need to cross compile. See https://mariadb.com/kb/en/cross-compiling-mariadb/
+  # Temporarily use the x86 clang to build the tools mariadb needs in the host dir.
   export CC=${CC_FOR_BUILD} \
   CXX=${CXX_FOR_BUILD} \
   CPP="${CC_FOR_BUILD} -E" \
