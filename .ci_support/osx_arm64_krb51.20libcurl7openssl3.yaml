@@ -25,7 +25,7 @@ ncurses:
 openssl:
 - '3'
 pcre2:
-- '10.42'
+- '10.43'
 target_platform:
 - osx-arm64
 xz:
