@@ -235,6 +235,3 @@ Feedstock Maintainers
 * [@ihnorton](https://github.com/ihnorton/)
 * [@shelnutt2](https://github.com/shelnutt2/)
 
-
-<!-- dummy commit to enable rerendering -->
-
