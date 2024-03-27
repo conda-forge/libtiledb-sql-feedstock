@@ -31,7 +31,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.20.*
+    - tiledb 2.21.*
     - libcurl
     - zlib
     - bzip2
@@ -46,7 +46,7 @@ requirements:
     - openssl
     - libaio  # [linux]
     - libiconv  # [osx]
-    - tiledb 2.20.*
+    - tiledb 2.21.*
     - libcurl
     - zlib
     - bzip2
