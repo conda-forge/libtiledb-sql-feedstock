@@ -17,7 +17,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 krb5:
-- '1.21'
+- '1.20'
 libcurl:
 - '8'
 lz4_c:
@@ -35,9 +35,6 @@ xz:
 zip_keys:
 - - c_stdlib_version
   - cdt_name
-- - openssl
-  - libcurl
-  - krb5
 zlib:
 - '1.2'
 zstd:

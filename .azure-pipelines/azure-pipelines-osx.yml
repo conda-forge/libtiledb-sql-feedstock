@@ -8,23 +8,11 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_krb51.20libcurl7openssl1.1.1:
-        CONFIG: osx_64_krb51.20libcurl7openssl1.1.1
+      osx_64_:
+        CONFIG: osx_64_
         UPLOAD_PACKAGES: 'True'
-      osx_64_krb51.20libcurl7openssl3:
-        CONFIG: osx_64_krb51.20libcurl7openssl3
-        UPLOAD_PACKAGES: 'True'
-      osx_64_krb51.21libcurl8openssl3:
-        CONFIG: osx_64_krb51.21libcurl8openssl3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_krb51.20libcurl7openssl1.1.1:
-        CONFIG: osx_arm64_krb51.20libcurl7openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_krb51.20libcurl7openssl3:
-        CONFIG: osx_arm64_krb51.20libcurl7openssl3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_krb51.21libcurl8openssl3:
-        CONFIG: osx_arm64_krb51.21libcurl8openssl3
+      osx_arm64_:
+        CONFIG: osx_arm64_
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
