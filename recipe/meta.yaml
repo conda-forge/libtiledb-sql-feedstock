@@ -87,6 +87,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jdblischak
     - DimitrisStaratzis
     - shelnutt2
     - ihnorton
