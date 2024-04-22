@@ -40,7 +40,7 @@ requirements:
     - libedit
     - ncurses
     - xz
-    - krb5 1.21.*
+    - krb5
     - pcre2
   run:
     - openssl
@@ -55,7 +55,7 @@ requirements:
     - libedit
     - ncurses
     - xz
-    - krb5 1.21.* # unclear why we have this, but pin to fix solver conflict
+    - krb5
     - pcre2
 
 test:
