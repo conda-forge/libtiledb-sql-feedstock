@@ -42,21 +42,6 @@ requirements:
     - xz
     - krb5
     - pcre2
-  run:
-    - openssl
-    - libaio  # [linux]
-    - libiconv  # [osx]
-    - tiledb 2.22.*
-    - libcurl
-    - zlib
-    - bzip2
-    - zstd
-    - lz4-c
-    - libedit
-    - ncurses
-    - xz
-    - krb5
-    - pcre2
 
 test:
   commands:
