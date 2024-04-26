@@ -191,5 +191,6 @@ Feedstock Maintainers
 
 * [@DimitrisStaratzis](https://github.com/DimitrisStaratzis/)
 * [@ihnorton](https://github.com/ihnorton/)
+* [@jdblischak](https://github.com/jdblischak/)
 * [@shelnutt2](https://github.com/shelnutt2/)
 
