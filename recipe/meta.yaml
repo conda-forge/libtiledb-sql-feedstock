@@ -24,13 +24,12 @@ requirements:
     - pkg-config  # [not win]
     - wget  # [unix]
     - git
+    - libaio  # [linux]
     - libiconv  # [osx]
     - {{ compiler('cxx') }}
     - bison
   host:
     - openssl
-    - libaio  # [linux]
-    - libiconv  # [osx]
     - tiledb 2.22.*
     - libcurl
     - zlib
