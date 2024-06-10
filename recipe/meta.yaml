@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.31.0" %}
-{% set sha256 = "336c5cfe696928488690c4f82996795370571fe91379aba5e7086dac6c593d44" %}
+{% set version = "0.32.0" %}
+{% set sha256 = "1a48c7776c56b07f87e0b06b565b16def13b37d2652843497ea8b657a33ee689" %}
 
 package:
   name: {{ name }}
@@ -31,7 +31,7 @@ requirements:
     - bison
   host:
     - openssl
-    - tiledb 2.23.*
+    - tiledb 2.24.*
     - libcurl
     - zlib
     - bzip2
