@@ -34,8 +34,6 @@ pcre2:
 - '10.44'
 target_platform:
 - osx-64
-tiledb:
-- '2.26'
 xz:
 - '5'
 zlib:
