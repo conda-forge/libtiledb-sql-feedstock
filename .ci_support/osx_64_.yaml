@@ -22,6 +22,8 @@ libcurl:
 - '8'
 libiconv:
 - '1'
+liblzma_devel:
+- '5'
 lz4_c:
 - '1.10'
 macos_machine:
@@ -34,8 +36,8 @@ pcre2:
 - '10.44'
 target_platform:
 - osx-64
-xz:
-- '5'
+tiledb:
+- '2.26'
 zlib:
 - '1'
 zstd:
