@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.34.2" %}
-{% set sha256 = "8b1cf7922f97c9d1be1693763fcb700a3e286c644fb651e27a12c34810848a59" %}
+{% set version = "0.35.0" %}
+{% set sha256 = "6ca6069a1962f8250ab69a3740bd62be4e72bd0633ee5018e70b194cd217d55e" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
   missing_dso_whitelist:
     - /usr/lib/libncurses.5.4.dylib  # [osx]
@@ -31,7 +31,7 @@ requirements:
     - bison
   host:
     - openssl
-    - tiledb 2.26.*
+    - tiledb 2.27.*
     - libcurl
     - zlib
     - bzip2
