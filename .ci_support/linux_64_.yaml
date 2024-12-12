@@ -33,7 +33,7 @@ pcre2:
 target_platform:
 - linux-64
 tiledb:
-- '2.26'
+- '2.27'
 zlib:
 - '1'
 zstd:
