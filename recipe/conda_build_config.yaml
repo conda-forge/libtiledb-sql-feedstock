@@ -2,3 +2,7 @@ MACOSX_SDK_VERSION:  # [osx and x86_64]
   - 10.14            # [osx and x86_64]
 c_stdlib_version:    # [osx and x86_64]
   - 10.14            # [osx and x86_64]
+# Need lz4-c 1.9 support for TileDB Cloud
+lz4_c:
+  - 1.9.3  # [linux]
+  - 1.10
