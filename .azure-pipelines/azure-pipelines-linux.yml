@@ -8,8 +8,12 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_:
-        CONFIG: linux_64_
+      linux_64_lz4_c1.10:
+        CONFIG: linux_64_lz4_c1.10
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_64_lz4_c1.9.3:
+        CONFIG: linux_64_lz4_c1.9.3
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360

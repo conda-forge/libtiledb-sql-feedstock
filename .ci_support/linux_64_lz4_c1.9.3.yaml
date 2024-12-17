@@ -1,0 +1,40 @@
+bzip2:
+- '1'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.17'
+cdt_name:
+- conda
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '13'
+docker_image:
+- quay.io/condaforge/linux-anvil-x86_64:alma9
+krb5:
+- '1.21'
+libcurl:
+- '8'
+liblzma_devel:
+- '5'
+lz4_c:
+- 1.9.3
+ncurses:
+- '6'
+openssl:
+- '3'
+pcre2:
+- '10.44'
+target_platform:
+- linux-64
+tiledb:
+- '2.27'
+zlib:
+- '1'
+zstd:
+- '1.5'
