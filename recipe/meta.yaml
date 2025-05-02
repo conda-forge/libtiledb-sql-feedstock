@@ -19,7 +19,7 @@ build:
 
 requirements:
   build:
-    - cmake
+    - cmake <4
     - make  # [not win]
     - pkg-config  # [not win]
     - wget  # [unix]
