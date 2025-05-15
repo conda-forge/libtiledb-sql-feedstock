@@ -72,6 +72,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - johnkerl
     - jdblischak
     - dudoslav
     - shelnutt2
