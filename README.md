@@ -1,6 +1,9 @@
 About libtiledb-sql-feedstock
 =============================
 
+> [!NOTE]
+> TileDB-SQL is deprecated in favor of the TileDB-Tables repsitory which offers compatibility with DataFusion.
+
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libtiledb-sql-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tiledb.com
@@ -13,7 +16,7 @@ Development: https://github.com/TileDB-Inc/TileDB-MariaDB
 
 Documentation: https://docs.tiledb.com/developer/api-usage/embedded-sql
 
-MyTile is a storage engine for MariaDB which allows dynamic access to TileDB array. libtiledb-sql is a limited build of mariadb to produce a minimum embeddable library for a SQL interface.\n
+MyTile is a storage engine for MariaDB which allows dynamic access to TileDB array. libtiledb-sql is a limited build of mariadb to produce a minimum embeddable library for a SQL interface.
 
 Docs: https://docs.tiledb.com/developer/api-usage/embedded-sql
 
